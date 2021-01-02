@@ -75,7 +75,7 @@ namespace Crisan_AndreaMaria_project.Pages.Movies
             movieToUpdate,
             "Movie",
                 i => i.Title, i => i.Director,
-                i => i.IMDBRatings, i => i.ReleaseDate, i => i.ProductionCo, i => i.Star))
+                i => i.IMDBRatings, i => i.ReleaseDate, i => i.ProductionCoID, i => i.StarID))
             {
                 UpdateMovieGenres(_context, selectedGenres, movieToUpdate);
                 await _context.SaveChangesAsync();
